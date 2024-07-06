@@ -223,7 +223,7 @@ a{
 }
 .items .item{
   width:275px;
-  height:320px;
+  height:330px;
   color:black;
   box-shadow: 5px 5px 5px rgba(0.1,0.1,0.1,0.1);
   border-radius:10px;
@@ -638,14 +638,14 @@ color:black
 }
 @media screen and (max-width:820px){
   .items .item{
-    width:230px;
+    width:240px;
     height:340px;
   }
 }
 @media screen and (max-width:640px){
   .items .item{
     width:190px;
-    height:340px;
+    height:350px;
   }
   .items .item h3{
     color:red;
@@ -655,13 +655,13 @@ color:black
 @media screen and (max-width:420px){
   .items .item{
     width:175px;
-    height:320px;
+    height:330px;
     font-size:13px;
   }
 }@media screen and (max-width:377px){
   .items .item{
     width:150px;
-    height:325px;
+    height:330px;
   }
 }
 .registration.active{

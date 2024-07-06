@@ -24,23 +24,23 @@ const Menu = ({setProducts}) => {
             </div>
             <div className="menu-list">
 
-                <div onClick={()=>category(4)} className="item">
+                <div onClick={()=>category(1)} className="item">
                     <img src={cake}/>
                     <p>Cake</p>
                 </div>
-                <div onClick={()=>category(3)} className="item">
+                <div onClick={()=>category(2)} className="item">
                     <img src={pizza}/>
                     <p>pizza</p>
                 </div>
-                <div onClick={()=>category(1)} className="item">
+                <div onClick={()=>category(3)} className="item">
                     <img src={ice}/>
                     <p>ice</p>
                 </div>
-                <div onClick={()=>category(5)} className="item">
+                <div onClick={()=>category(4)} className="item">
                     <img src={tee}/>
                     <p>tee</p>
                 </div>
-                <div onClick={()=>category(2)} className="item">
+                <div onClick={()=>category(5)} className="item">
                     <img src={juce}/>
                     <p>juce</p>
                 </div>

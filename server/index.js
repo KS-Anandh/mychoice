@@ -14,7 +14,7 @@ app.use("/mychoice/orders",orderRoute)// for Order Details
 //for connecting mongodb 
 // mongodb+srv://ks_anandh:nandha1432@cluster0.q8u6zz9.mongodb.net/mychoice?retryWrites=true&w=majority&appName=Cluster0
 // mongodb://localhost:27017/testProject_1
-mongoose.connect("mongodb+srv://ks_anandh:nandha1432@cluster0.q8u6zz9.mongodb.net/mychoice?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect("mongodb+srv://ks_anandh:nandha1432@cluster0.q8u6zz9.mongodb.net/my_choice?retryWrites=true&w=majority&appName=Cluster0")
 .then(()=>{
     console.log("Database Connected Successfully")
     //for listening port

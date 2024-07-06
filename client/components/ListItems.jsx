@@ -41,7 +41,7 @@ const ListItems = ({products,delay,user,setCart}) => {
                          <h3>{item.productName}</h3>
                          <img src={rating}/>
                         </div>         
-                        <p>{item.productDesc}</p>
+                        <p>{item.productDesc.slice(0,80)}...</p>
                         <p className='price'>$ {item.productPrice}</p>
 
                     </div>
