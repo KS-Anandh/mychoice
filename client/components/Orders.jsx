@@ -6,7 +6,7 @@ const Orders = ({user,nav,setNav}) => {
   const [ids,setIds]=useState([]);
   const [orderItems,setOrderItems]=useState([]);
   useEffect(()=>{
-    axios.get(`http://localhost:9800/mychoice/users/orders/${user}`)
+    axios.get(`https://mychoice-server.vercel.app/mychoice/users/orders/${user}`)
     .then((res)=>{
       setIds(res.data);
     })
@@ -14,7 +14,7 @@ const Orders = ({user,nav,setNav}) => {
         console.log(err)})
       },[])
   useEffect(()=>{
-    axios.post("http://localhost:9800/mychoice/orders/list/ids",{ids})
+    axios.post("https://mychoice-server.vercel.app/mychoice/orders/list/ids",{ids})
     .then((res)=>{
         setOrderItems(res.data)
       })
@@ -28,7 +28,7 @@ const Orders = ({user,nav,setNav}) => {
       return item._id!=id;
     })
     setIds(updatedIds)
-    axios.delete(`http://localhost:9800/mychoice/orders/remove/id/${id}`)
+    axios.delete(`https://mychoice-server.vercel.app/mychoice/orders/remove/id/${id}`)
     .then((res)=>{
        alert("Order Is Canceled")
     })

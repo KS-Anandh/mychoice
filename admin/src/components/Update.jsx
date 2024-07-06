@@ -7,7 +7,7 @@ import { useParams,Link } from 'react-router-dom'
 const Update = () => {
   const [data,setData]=useState({});
   useEffect(()=>{
-    axios.get(`http://localhost:9800/mychoice/product/id/${id}`)
+    axios.get(`https://mychoice-server.vercel.app/mychoice/product/id/${id}`)
    .then((res)=>{
        setData(res.data)
        console.log(res.data)
@@ -33,7 +33,7 @@ const Update = () => {
         reader.onerror=(err)=>{console.log(err) }
        }
     const sendToDB=async()=>{
-       await axios.put(`http://localhost:9800/mychoice/product/id/${id}`,{productName,productCategory,productPrice,productRating,productDesc,productImg})
+       await axios.put(`https://mychoice-server.vercel.app/mychoice/product/id/${id}`,{productName,productCategory,productPrice,productRating,productDesc,productImg})
         .then((res)=>{
           console.log(res.data)
         })

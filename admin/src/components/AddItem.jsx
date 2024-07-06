@@ -19,7 +19,7 @@ const[productDesc,setProductDesc]=useState(null);
         reader.onerror=(err)=>{console.log(err) }
        }
     const sendToDB=async()=>{
-       await axios.post("http://localhost:9800/mychoice/product",{productName,productCategory,productPrice,productRating,productDesc,productImg})
+       await axios.post("https://mychoice-server.vercel.app/mychoice/product",{productName,productCategory,productPrice,productRating,productDesc,productImg})
         .then((res)=>{
           console.log(res.data)
         })
